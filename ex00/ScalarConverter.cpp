@@ -107,7 +107,7 @@ static bool	isDouble(const std::string& lit)
 	return true;
 }
 
-bool isPseudo(const std::string& lit)
+static bool isPseudo(const std::string& lit)
 {
 	if (lit == "inf" || lit == "+inf" || lit == "-inf" || lit == "nan" || lit == "inff" || lit == "-inff" || lit == "+inff" || lit == "nanf")
 		return true;
